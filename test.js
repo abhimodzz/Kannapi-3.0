@@ -14,3 +14,4 @@ for (let file of files) {
   .on('exit', () => assert.ok(file) & console.log('Done', file))
   .stderr.on('data', chunk => assert.fail(chunk.toString()))
 }
+ 
